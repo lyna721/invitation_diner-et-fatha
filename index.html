@@ -1,211 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Invitation Fatha & Dîner</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:linear-gradient(135deg,#fff8e8,#ffffff,#f4e3a1);
-    font-family:'Poppins',sans-serif;
-    overflow:hidden;
-    padding:20px;
-}
-
-/* Fleurs animées */
-.floral{
-    position:fixed;
-    inset:0;
-    pointer-events:none;
-}
-
-.floral span{
-    position:absolute;
-    color:#d4af37;
-    font-size:22px;
-    animation:fall 12s linear infinite;
-}
-
-@keyframes fall{
-    from{
-        transform:translateY(-100px) rotate(0deg);
-    }
-    to{
-        transform:translateY(120vh) rotate(360deg);
-    }
-}
-
-/* Carte */
-.card{
-    width:100%;
-    max-width:700px;
-    background:white;
-    border:4px solid #d4af37;
-    border-radius:25px;
-    padding:35px 25px;
-    text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,0.15);
-    animation:fadeIn 1.5s ease;
-    position:relative;
-    z-index:10;
-}
-
-@keyframes fadeIn{
-    from{
-        opacity:0;
-        transform:scale(0.9);
-    }
-    to{
-        opacity:1;
-        transform:scale(1);
-    }
-}
-
-h1{
-    color:#c89b2d;
-    font-size:38px;
-    margin-bottom:10px;
-}
-
-.subtitle{
-    color:#777;
-    margin-bottom:20px;
-    font-size:18px;
-}
-
-.text{
-    color:#444;
-    font-size:20px;
-    line-height:1.8;
-}
-
-.info{
-    margin-top:25px;
-    font-size:21px;
-    color:#333;
-}
-
-.map-btn{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:10px;
-    margin-top:20px;
-    padding:14px;
-    border:2px solid #c89b2d;
-    border-radius:14px;
-    text-decoration:none;
-    color:#c89b2d;
-    font-weight:600;
-    transition:0.3s;
-}
-
-.map-btn:hover{
-    background:#c89b2d;
-    color:white;
-}
-
-.signature{
-    margin-top:25px;
-    color:#c89b2d;
-    font-size:24px;
-    font-weight:600;
-}
-
-/* Smartphone */
-@media (max-width:768px){
-
-    h1{
-        font-size:28px;
-    }
-
-    .subtitle{
-        font-size:15px;
-    }
-
-    .text{
-        font-size:16px;
-    }
-
-    .info{
-        font-size:17px;
-    }
-
-    .signature{
-        font-size:20px;
-    }
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation Fatiha - Famille Naraoui</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<div class="floral">
-    <span style="left:10%">❦</span>
-    <span style="left:25%">❦</span>
-    <span style="left:40%">❦</span>
-    <span style="left:55%">❦</span>
-    <span style="left:70%">❦</span>
-    <span style="left:85%">❦</span>
-</div>
+    <div class="invitation-card">
+        <div class="inner-border">
+            
+            <div class="arabic-header">
+                بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+            </div>
 
-<div class="card">
+            <p class="main-text">La famille <span class="bold-gold">NARAOUI</span><br>
+            a l'immense joie de vous inviter<br>
+            à la célébration de la <span class="bold-gold">Fatiha</span><br>
+            suivie d'un dîner convivial.</p>
 
-    <h1>💍 Invitation Fatha & Dîner 🍽️</h1>
+            <div class="separator">♥</div>
 
-    <div class="subtitle">
-        ✨ Avec la grâce de Dieu ✨
+            <div class="details-container">
+                <div class="detail-item">
+                    <div class="icon">📅</div>
+                    <div class="text-content">
+                        <span class="label">DATE</span>
+                        <span class="value">10 Juillet 2026</span>
+                    </div>
+                </div>
+
+                <div class="detail-item">
+                    <div class="icon">🕒</div>
+                    <div class="text-content">
+                        <span class="label">HEURE</span>
+                        <span class="value">À partir de 16h30</span>
+                    </div>
+                </div>
+
+                <div class="detail-item">
+                    <div class="icon">🏢</div>
+                    <div class="text-content">
+                        <span class="label">LIEU</span>
+                        <span class="value">Salle de dîner Ezzouar</span>
+                        <span class="sub-value">Boushaki D, Ilot 148,<br>Bab Ezzouar 16025, Alger</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://maps.google.com" target="_blank" class="maps-btn">
+                <span class="maps-icon">📍</span> OUVRIR SUR GOOGLE MAPS
+            </a>
+
+            <div class="separator">♥</div>
+
+            <p class="footer-text">Votre présence sera pour nous un immense honneur<br>et rendra ce moment inoubliable.</p>
+            
+            <div class="separator">♥</div>
+            
+            <p class="thank-you">Merci infiniment</p>
+
+        </div>
     </div>
-
-    <p class="text">
-        La famille <b>NARAOUI</b> a l'immense joie de vous inviter
-        à la célébration de la <b>Fatha</b> de leur fille,
-        suivie d'un dîner convivial.
-    </p>
-
-    <div class="info">
-
-        📅 <b>10 Juillet 2026</b><br><br>
-
-        🕔 <b>À partir de 16h30</b><br><br>
-
-        🏛️ <b>Salle :</b> Salle de dîner Ezzouar
-
-        <a class="map-btn"
-           href="https://www.google.com/maps/search/?api=1&query=Salle+de+diner+Ezzouar+Boushaki+D+Ilot+148+Bab+Ezzouar+16025"
-           target="_blank">
-
-           📍 Cliquez ici pour ouvrir sur Google Maps
-
-        </a>
-
-    </div>
-
-    <p class="text" style="margin-top:25px;">
-        Votre présence sera pour nous un immense honneur
-        et contribuera à rendre cette journée encore plus belle
-        et mémorable.
-    </p>
-
-   
-
-</div>
 
 </body>
 </html>
