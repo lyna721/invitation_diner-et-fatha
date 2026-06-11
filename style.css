@@ -1,0 +1,162 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f3ef; /* Fond très légèrement grisé pour faire ressortir la carte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Playfair Display', serif;
+    padding: 20px;
+}
+
+/* Conteneur principal de la carte */
+.invitation-card {
+    background: #ffffff;
+    max-width: 500px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    position: relative;
+    /* Optionnel : Vous pouvez ajouter une image de roses en fond ici */
+    /* background-image: url('vos-fleurs-or.png'); */
+    /* background-size: cover; */
+}
+
+/* Bordure dorée intérieure */
+.inner-border {
+    border: 2px solid #dfba6b;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* En-tête Arabe */
+.arabic-header {
+    font-size: 1.6rem;
+    color: #c59b4c;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Texte d'invitation */
+.main-text {
+    font-size: 1.1rem;
+    color: #4a4a4a;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.bold-gold {
+    color: #b38b3d;
+    font-weight: 700;
+}
+
+/* Petits cœurs séparateurs */
+.separator {
+    color: #dfba6b;
+    font-size: 0.8rem;
+    margin: 15px 0;
+}
+
+/* Section des détails (Date, Heure, Lieu) */
+.details-container {
+    text-align: left;
+    max-width: 320px;
+    margin: 20px auto;
+}
+
+.detail-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.icon {
+    font-size: 1.5rem;
+    background: #fff8eb;
+    border: 1px solid #f0dec0;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 0.75rem;
+    color: #ccaa66;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.value {
+    font-size: 1.05rem;
+    color: #2b2b2b;
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+.sub-value {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+    margin-top: 4px;
+}
+
+/* Bouton Google Maps */
+.maps-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #c59b4c, #ecd299);
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin: 15px 0;
+    box-shadow: 0 4px 15px rgba(197, 155, 76, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.maps-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(197, 155, 76, 0.4);
+}
+
+.maps-icon {
+    margin-right: 8px;
+}
+
+/* Pied de page */
+.footer-text {
+    font-size: 0.95rem;
+    color: #555;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.thank-you {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.2rem;
+    color: #b38b3d;
+    margin-top: 10px;
+}
