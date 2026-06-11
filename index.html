@@ -8,7 +8,7 @@
 <style>
 body{
     margin:0;
-    height:100vh;
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -17,22 +17,51 @@ body{
     overflow:hidden;
 }
 
-/* carte */
+/* Fleurs animées */
+.floral{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    pointer-events:none;
+}
+
+.floral span{
+    position:absolute;
+    color:#d4af37;
+    font-size:24px;
+    animation:fall 12s linear infinite;
+}
+
+@keyframes fall{
+    0%{transform:translateY(-10vh) rotate(0deg);}
+    100%{transform:translateY(110vh) rotate(360deg);}
+}
+
+/* Carte */
 .card{
     width:850px;
     max-width:92%;
-    padding:45px;
+    padding:50px;
     text-align:center;
     background:white;
     border:5px solid #d4af37;
     border-radius:25px;
     box-shadow:0 0 30px rgba(0,0,0,0.2);
     animation:fadeIn 2s ease;
+    z-index:2;
 }
 
 @keyframes fadeIn{
-    from{opacity:0; transform:scale(0.8);}
-    to{opacity:1; transform:scale(1);}
+    from{
+        opacity:0;
+        transform:scale(0.8);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
 }
 
 h1{
@@ -43,14 +72,14 @@ h1{
 
 .subtitle{
     font-size:20px;
-    color:#666;
+    color:#777;
+    margin-bottom:20px;
 }
 
 .text{
-    font-size:20px;
+    font-size:21px;
     color:#444;
     line-height:1.8;
-    margin-top:15px;
 }
 
 .info{
@@ -59,18 +88,11 @@ h1{
     color:#333;
 }
 
-a{
-    color:#b8860b;
-    font-weight:bold;
-    text-decoration:underline;
-}
-
-/* bouton maps */
 .map-btn{
-    margin-top:15px;
     display:inline-flex;
     align-items:center;
     gap:10px;
+    margin-top:15px;
     padding:12px 18px;
     border:2px solid #b8860b;
     border-radius:12px;
@@ -84,10 +106,25 @@ a{
     background:#b8860b;
     color:white;
 }
+
+.signature{
+    margin-top:30px;
+    font-size:24px;
+    color:#b8860b;
+}
 </style>
 </head>
 
 <body>
+
+<div class="floral">
+<span style="left:10%">❦</span>
+<span style="left:25%">❦</span>
+<span style="left:40%">❦</span>
+<span style="left:55%">❦</span>
+<span style="left:70%">❦</span>
+<span style="left:85%">❦</span>
+</div>
 
 <div class="card">
 
@@ -98,13 +135,15 @@ a{
 </div>
 
 <p class="text">
-La famille <b>NARAOUI</b> a l’immense joie de vous inviter
-à la célébration de la <b>Fatha</b> suivie d’un dîner convivial.
+La famille <b>NARAOUI</b> a l'immense joie de vous inviter
+à la célébration de la <b>Fatha</b> de leur fille,
+suivie d'un dîner convivial.
 </p>
 
 <div class="info">
 
 📅 <b>10 Juillet 2026</b><br><br>
+
 🕔 <b>À partir de 16h30</b><br><br>
 
 🏛️ <b>Salle :</b> Salle de dîner Ezzouar<br><br>
@@ -113,10 +152,7 @@ La famille <b>NARAOUI</b> a l’immense joie de vous inviter
 href="https://www.google.com/maps/search/?api=1&query=Salle+de+diner+Ezzouar+Boushaki+D+Ilot+148+Bab+Ezzouar+16025"
 target="_blank">
 
-<img src="https://cdn-icons-png.flaticon.com/512/684/684908.png"
-width="22">
-
-Clique ici pour ouvrir sur Maps
+📍 Cliquez ici pour ouvrir sur Google Maps
 
 </a>
 
@@ -124,8 +160,12 @@ Clique ici pour ouvrir sur Maps
 
 <p class="text">
 Votre présence sera pour nous un immense honneur
-et rendra ce moment inoubliable ✨
+et contribuera à rendre cette journée encore plus belle et mémorable.
 </p>
+
+<div class="signature">
+💛 Famille NARAOUI 💛
+</div>
 
 </div>
 
